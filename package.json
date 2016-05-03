@@ -1,0 +1,28 @@
+{
+  "name": "osx-volume-controls",
+  "version": "1.0.0",
+  "description": "Control volume on OSX",
+  "author": {
+    "name": "Benji Encalada",
+    "email": "benji.encalada@gmail.com"
+  },
+  "main": "./lib/volume.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjifs/osx-volume-controls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjifs/osx-volume-controls/issues"
+  },
+  "homepage": "https://github.com/benjifs/osx-volume-controls",
+  "keywords": [
+    "volume",
+    "osx",
+    "mac",
+    "applescript"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "applescript": "^1.0.0"
+  }
+}
