@@ -4,7 +4,7 @@ Control volume on OSX
 
 ## Installation
 ```
-	$ npm install osx-volume-controls
+$ npm install osx-volume-controls
 ```
 
 ## API
@@ -27,24 +27,24 @@ Unmute volume.
 
 ## Usage
 ```
-	var Volume = require('osx-volume-controls')
+var Volume = require('osx-volume-controls')
 
-	Volume.state(function(err, rtn) {
-		console.log("Volume: " + rtn[0] + " mute: " + rtn[1]);
-	});
+Volume.state(function(err, rtn) {
+	console.log("Volume: " + rtn[0] + " mute: " + rtn[1]);
+});
+Volume.volumeState(function(err, rtn) {
+	console.log("Volume: " + rtn);
+});
+Volume.muteState(function(err, rtn) {
+	console.log("Mute: " + rtn);
+});
+Volume.increase(function() {
 	Volume.volumeState(function(err, rtn) {
 		console.log("Volume: " + rtn);
 	});
-	Volume.muteState(function(err, rtn) {
-		console.log("Mute: " + rtn);
-	});
-	Volume.increase(function() {
-		Volume.volumeState(function(err, rtn) {
-			console.log("Volume: " + rtn);
-		});
-	});
-	Volume.mute();
-	Volume.set(87); // Set volume to 87%
+});
+Volume.mute();
+Volume.set(87); // Set volume to 87%
 ```
 
 ## License
